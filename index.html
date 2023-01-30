@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najduža reč</title>
+    <link href = "style.css" rel = "stylesheet">
+</head>
+<body>
+    <span class = "backBtn">&#8592</span>
+
+    <div class="options">
+        <div class = "button play">Igraj</div>
+        <div class = "button find">Pronađi</div>
+    </div>
+
+    <form class = "form">
+        <label for = "word_length">Izaberi dužinu reči:</label>
+        <select name = "word_length">
+            <option value = "7">7</option>
+            <option value = "8">8</option>
+            <option value = "9">9</option>
+            <option value = "10">10</option>
+            <option value = "11">11</option>
+            <option value = "12" selected>12</option>
+            <option value = "13">13</option>
+            <option value = "14">14</option>
+            <option value = "15">15</option>
+        </select>
+    </form>
+
+    <span class = "timer">60</span>    
+
+    <p class = "messageNote">Posle svakog slova stavi zapetu</p>
+    <input type="text" class = "input">
+    <input type ="button" class = "solveBtn" value = "Pronađi reči">
+    <p class = "result"></p>
+    
+    <script src = "main.js" type = "module"></script>
+</body>
+</html>

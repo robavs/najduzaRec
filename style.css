@@ -1,0 +1,168 @@
+html{
+    font-size: 1.5em;
+    color:white;
+    background-color: rgb(0, 83, 150);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.options{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.button{
+    width: 6.5em;
+    height: 3em;
+    border: 1px solid white;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.play{
+    background-color: red;
+}
+.find{
+    background-color: green;
+}
+.form{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);   
+}
+select{
+    width: 4em;
+    height: 2em;
+    font-size:0.6em;
+}
+.timer{
+    font-size: 2.5em;
+    text-align: center;
+    display: none;
+}
+.backBtn{
+    cursor: pointer;
+    display: none;
+}
+
+.letters{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.letter{
+    height: 2em;
+    width: 2em;
+    outline:1px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background: rgb(0, 108, 34)
+}
+
+.word{
+    outline: 2px solid white;
+    width: 95%;
+    height: 7%;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    width: 1.0em;
+    height: 1.0em;
+    border-radius:50%;
+    outline: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
+.deleteBtn{
+    right: 5%;
+    background: red;
+}
+.checkBtn{
+    left: 5%;
+    background: blue;
+}
+.submitBtn{
+    left: 10%;
+    background: green;
+    margin-left: 15px;
+}
+.message{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.answer{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input{
+    display: none;
+    height: 3%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.messageNote{
+    display: none;
+    height: 3%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.solveBtn{
+    display: none;
+    background-color: green;
+    color:white;
+    font-size:1em;
+    cursor: pointer;
+    outline: 1px solid white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.result{
+    position: absolute;
+    top : 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media only screen and (max-width: 600px){
+    .letter{
+        height: 1.5em;
+        width: 1.5em;
+    }
+    .submitBtn{
+        left: 12.5%;
+    }
+}
