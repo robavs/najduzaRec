@@ -2,11 +2,8 @@ const random = (min, max) => ~~(Math.random() * (max - min)) + min
 const letters = ['а', 'б', 'в', 'г', 'д', 'ђ', 'е', 'ж', 'з', 'и', 'ј', 'к', 'л', 'љ', 'м', 'н', 'њ', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ћ', 'џ', 'ш']
 export const convertor = {'A':'а','B':'б','V':'в','G':'г','D':'д','Đ':'ђ','DJ':'ђ','E':'е','Ž':'ж','Z':'з','I':'и','J':'ј','K':'к','L':'л','LJ':'љ','M':'м','N':'н','NJ':'њ','O':'о','P':'п','R':'р','S':'с','T':'т','U':'у','F':'ф','H':'х','C':'ц','Č':'ч','Ć':'ћ','DZ':'џ','DŽ':'џ','Š':'ш'}
 
-export const dictionary = 
-    await fetch("baza.json")
-      .then(res => res.json())
-      .then(data => data)
-      .catch(err => console.log(err))
+const data = await fetch("baza.json")
+export const dictionary = await data.json()
 
 export const findWords = (letters, path, depth, index, possibleWords = new Set()) => {
     if(index == depth){
