@@ -38,7 +38,7 @@ html{
     position: absolute;
     left: 50%;
     top: 60%;
-    transform: translate(-50%,-50%);   
+    transform: translate(-50%,-50%);  
 }
 select{
     width: 4em;
@@ -150,6 +150,7 @@ select{
     position: absolute;
     top: 60%;
     left: 50%;
+    transform: translate(-50%, -50%);
 }
 .result{
     position: absolute;
@@ -158,9 +159,24 @@ select{
     transform: translateX(-50%);
 }
 @media only screen and (max-width: 600px){
+    select{
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+        margin-top: 30px;    
+    }
+    .answer{
+        top: 50%;
+    }
+    .letters{
+        top: 30%;
+    }
     .letter{
         height: 1.5em;
         width: 1.5em;
+    }
+    .word{
+        top:70%;
     }
     .submitBtn{
         left: 12.5%;
