@@ -167,6 +167,10 @@ select{
     }
     .answer{
         top: 50%;
+        font-size: 0.9em;
+    }
+    .message{
+        font-size: 0.9em;
     }
     .letters{
         top: 30%;
@@ -176,7 +180,7 @@ select{
         width: 1.5em;
     }
     .word{
-        top:70%;
+        top:67%;
     }
     .submitBtn{
         left: 12.5%;
