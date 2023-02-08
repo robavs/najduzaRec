@@ -199,8 +199,8 @@ const find = () => {
         const words = [...findWords(letters, "", slova.length, 0)]
                       .sort((a, b) => b.length - a.length)
         let res = ""
-        
-        for(let i = 0; i < 100; i++)
+        const end = words.length > 100 ? 100 : words.length
+        for(let i = 0; i < end; i++)
             res += `${words[i]} ----> ${words[i].length} slova` + "\n"
         
         result.innerText = res
