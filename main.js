@@ -185,8 +185,10 @@ const find = () => {
         const slova = input.value.toUpperCase().split(",")
         const letters = []
 
-        if (!input.value.length)
+        if (!input.value.length){
+            res.innerHTML = ""
             return alert("Unesite karaktere")
+        }
 
         for (let i = 0; i < slova.length; i++) {
             if (!convertor[slova[i]]) {
