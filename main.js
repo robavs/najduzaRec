@@ -186,7 +186,7 @@ const find = () => {
         const letters = []
 
         if (!input.value.length){
-            res.innerHTML = ""
+            result.innerText = ""
             return alert("Unesite karaktere")
         }
 
