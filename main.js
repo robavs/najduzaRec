@@ -182,18 +182,24 @@ const find = () => {
     solveBtn.style.display = "block"
     
     solveBtn.addEventListener('click', () => {
-        const slova = String(input.value).toUpperCase().split(",")
+        const slova = input.value.toUpperCase().split(",")
         const letters = []
-        for(let i = 0; i < slova.length; i++){
-            if(!convertor[slova[i]]){
+
+        if (!input.value.length)
+            return alert("Unesite karaktere")
+
+        for (let i = 0; i < slova.length; i++) {
+            if (!convertor[slova[i]]) {
                 result.innerText = ""
                 return alert("Uneli ste nevalidan karkter")
             }
             letters.push(convertor[slova[i]])
         }
-        if(!String(input.value).includes(","))
+
+        if (!input.value.includes(",") && input.value.length != 1)
             return alert("Ne validan sadržaj")
-        if(letters.length > 20)
+
+        if (letters.length > 20)
             return alert("Prevelika reč!")
         
         const words = [...findWords(letters, "", slova.length, 0)]
